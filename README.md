@@ -1,2 +1,2 @@
-# July-LeetCoding-Challenge
-Contains Solution for Question from the July LeetCoding Challenge
+# August-LeetCoding-Challenge
+Contains Solution for Question from the August LeetCoding Challenge
