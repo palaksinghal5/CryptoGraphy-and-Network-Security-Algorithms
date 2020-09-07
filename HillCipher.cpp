@@ -1,17 +1,17 @@
-/**************************
+/******************************************************************************
 
                               Online C++ Compiler.
                Code, Compile, Run and Debug C++ program online.
 Write your code in this editor and press "Run" button to compile and execute it.
 
-***************************/
+*******************************************************************************/
 
 #include <iostream>
 
 
 using namespace std;
 
-void Hillcipherencryption(string s, string key){
+string Hillcipherencryption(string s, string key){
   
     int keymatrix[3][3];
     
@@ -32,7 +32,7 @@ void Hillcipherencryption(string s, string key){
         }
     }
     
-    
+    string cip;
     string s3=s;
     cout<<"Extended string--->"<<s3<<endl;
     
@@ -71,11 +71,15 @@ void Hillcipherencryption(string s, string key){
     }
     
     cout<<ciphertext;
-    
+    cip+=ciphertext;
 }
 
 cout<<endl;
+
+return cip;
 }
+
+//string Hilldecipher(string cip,string key) 
 
 int main()
 {
@@ -83,7 +87,10 @@ int main()
     cin>>s;
     string key;
     cin>>key;
-    Hillcipherencryption(s,key);
+    string encryptedstring=Hillcipherencryption(s,key);
+    //cout<<encryptedstring<<endl;
+    //string decryptedstring=Hilldecipher(cip,key);
+    //cout<<decryptedstring<<endl;
 
     return 0;
 }
